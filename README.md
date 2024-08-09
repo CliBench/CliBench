@@ -1,6 +1,7 @@
 # CliBench: Multifaceted Evaluation of Large Language Models in Clinical Decisions on Diagnoses, Procedures, Lab Tests Orders and Prescriptions
 
-## Download the MIMIC-IV datasets
+## Download Data
+### Raw MIMIC-IV dataset
 Go to [https://mimic.physionet.org/](https://mimic.physionet.org/gettingstarted/access/) for access. Once you have the authority for the dataset, download the dataset at the `data` folder under the same directory as the this repository.
 
 - MIMIC IV: https://physionet.org/content/mimiciv/2.2/
@@ -27,6 +28,10 @@ gzip -d discharge_detail.csv.gz
 gzip -d radiology.csv.gz
 gzip -d radiology_detail.csv.gz
 ```
+
+### NDC code metadata
+
+Please download the NDC code metadata from the [this link](https://drive.google.com/drive/folders/160wDdKE4mZUDeHjC0HhQaNs5igIJGoQY?usp=sharing) and put `ndc_metadata.json` under `code_sys/NDC` directory.
 
 ## Dependencies
 
